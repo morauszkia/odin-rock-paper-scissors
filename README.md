@@ -1,1 +1,3 @@
-# odin-rock-paper-scissors
+# Rock Paper Scissors Game
+
+Created for the Odin Project
