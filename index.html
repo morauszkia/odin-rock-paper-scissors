@@ -7,10 +7,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock-Paper-Scissors</title>
         <script defer src="script.js"></script>
+        <link rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <header>
+            <h1 class="page-title">Rock Paper Scissors</h1>
+        </header>
 
+        <main class="game-container">
+            <p class="description">Can you beat the computer in this classic game? Rock beats Scissors,
+                Scissors beat
+                Paper, Paper beats
+                Rock. First to reach 5 points wins the game.</p>
+            <div class="game">
+
+                <div class="player-container controls-container">
+                    <h2>Choose your weapon!</h2>
+
+                    <ul class="choices-list">
+                        <li class="choice-item">
+                            <button class="choice-btn player-choice-btn">
+                                <i class="las la-hand-rock btn-icon"></i>
+                                <p>rock</p>
+                            </button>
+                        </li>
+                        <li class="choice-item">
+                            <button class="choice-btn player-choice-btn">
+                                <i class="las la-hand-paper btn-icon"></i>
+                                <p>paper</p>
+                            </button>
+                        </li>
+                        <li class="choice-item">
+                            <button class="choice-btn player-choice-btn">
+                                <i class="las la-hand-scissors btn-icon"></i>
+                                <p>scissors</p>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="results-container">
+                    <p class="scores" id="scores-container">
+                        <span id="player-score">0</span>:<span id="computer-score">0</span>
+                    </p>
+                    <p id="round-result-text"></p>
+                </div>
+
+                <div class="computer-container controls-container">
+                    <h2>The computer's choice</h2>
+
+                    <ul class="choices-list">
+                        <li class="choice-item">
+                            <button class="choice-btn computer-choice-btn">
+                                <i class="las la-hand-rock btn-icon"></i>
+                                <p>rock</p>
+                            </button>
+                        </li>
+                        <li class="choice-item">
+                            <button class="choice-btn computer-choice-btn">
+                                <i class="las la-hand-paper btn-icon"></i>
+                                <p>paper</p>
+                            </button>
+                        </li>
+                        <li class="choice-item">
+                            <button class="choice-btn computer-choice-btn">
+                                <i class="las la-hand-scissors btn-icon"></i>
+                                <p>scissors</p>
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            Copyright &#169; <a href="" target="_blank">amorauszki</a>
+        </footer>
     </body>
 
 </html>
